@@ -1,0 +1,23 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to top, black, rgb(0, 140, 255), white);
+}
+
+.input_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.question {
+    color: white;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.4) 0.1rem 0.1rem 0.6rem;
+
+    width: 50vw;
+
+    height: 5vh;
+
+    border-radius: 3vh;
+}
