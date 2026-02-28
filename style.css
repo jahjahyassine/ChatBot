@@ -1,17 +1,69 @@
 body {
     min-height: 100vh;
     margin: 0;
-    background: linear-gradient(to top, black, rgb(0, 140, 255), white);
+    background: linear-gradient(to top, black, rgb(0, 42, 77), white);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-family: 'Space Grotesk', sans-serif;
 }
+
 main {
+    display: flex;
+    flex: 1;
+}
+
+a, .logo a:visited, .logo a:active, .logo a:hover {
+    text-decoration: none;
+    color: rgb(224, 239, 252);
+}
+
+
+.login, .signup {
+    font-size: 1.2rem;
+    color: white;
+    padding: 0.3rem 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.login:hover, .signup:hover {
+    background-color: #005ec2;
+    border-radius: 5em;
+
+    transform: translateY(-0.2vh);
+}
+
+.auth_links {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    font-size: 3rem;
+    font-family: 'Dancing Script', sans-serif;
+    color: rgb(224, 239, 252);
+    margin-left: 5vw;
+}
+
+.logins {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1F2A38;
+    height: 5.5vh;
+}
+
+
+.input_section {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
 }
 .question {
     border: none;
@@ -40,33 +92,31 @@ main {
 
 .submit_icon {
     all: unset;
-    background-color: #FF7F00;
+    background-color: rgb(190, 138, 86);
     box-shadow: rgba(0, 0, 0, 0.4) 0.1rem 0.1rem 0.6rem;
-    margin-top: 2vh;
     font-size: 1.5vh;
     padding: 1vh 2vw 1vh 2vw;
     border-radius: 2vh;
+    transition: all 0.3s ease;
 }
 
 .add_icon {
     all: unset;
-    background-color: #007BFF;
+    background-color: #546172;
     box-shadow: rgba(0, 0, 0, 0.4) 0.1rem 0.1rem 0.6rem;
-    margin-top: 2vh;
     font-size: 1.5vh;
     padding: 1vh 2vw 1vh 2vw;
     border-radius: 2vh;
+    transition: all 0.3s ease;
 }
 
 .submit_icon:hover, .add_icon:hover {
-    background-color: #007BFF;
+    background-color: #024a97;
     transform: translateY(-0.2vh);
-    transition: all 0.3s ease;
 }
 
 .chats {
     width: 300px;
-    height: 100vh;
     color: white;
     background: linear-gradient(to top, black, #1F2A38);
     display: flex;
@@ -87,4 +137,15 @@ li {
 
 h3 {
     color: #838588;
+}
+
+.chats li {
+    padding: 0.5rem 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.chats li:hover {
+    background-color: rgba(255,255,255,0.08);
 }

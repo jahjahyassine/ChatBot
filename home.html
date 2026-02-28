@@ -10,29 +10,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 
     <title>Jarvis</title>
 </head>
 <body>
-    <nav class="chats">
-        <h3>Chat History</h3>
-        <ul>
-            <li class="chat">How to start Web development?</li>
-            <li class="chat">What's a Nebula?</li>
-            <li class="chat">Resources for Javascript</li>
-        </ul>
-    </nav>
+    <header class="logins">
+        <div class="logo">
+            <a href="home.html">Jarvis</a>
+        </div>
+
+        <div class="auth_links">
+            <a href="login.html" class="login">Login</a>
+            <a href="signup.html" class="signup">Sign Up</a>
+        </div>
+    </header>
 
     <main>
-        <section class="input_section">
+        <nav class="chats">
+            <h3>Chat History</h3>
+            <ul>
+                <li class="chat">How to start Web development?</li>
+                <li class="chat">What's a Nebula?</li>
+                <li class="chat">Resources for Javascript</li>
+            </ul>
+        </nav>
+
+        <section class="input_section">  
             <input type="text" placeholder="What's on your mind?" name="question" class="question">
-        </section>
-        <section class="actions">
-            <button class="add_icon">+</button>
-            <button class="submit_icon">Submit</button>
+
+            <section class="actions">
+                <button class="add_icon">+</button>
+                <button class="submit_icon">Submit</button>
+            </section>
         </section>
     </main>
-    
 </body>
 </html>
