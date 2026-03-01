@@ -1,7 +1,7 @@
 body {
     min-height: 100vh;
     margin: 0;
-    background: linear-gradient(to top, black, rgb(0, 42, 77), white);
+    background: linear-gradient(to top, black, #2D3436, #DFE6E9);
     display: flex;
     flex-direction: column;
     font-family: 'Space Grotesk', sans-serif;
@@ -20,7 +20,7 @@ a, .logo a:visited, .logo a:active, .logo a:hover {
 
 .login, .signup {
     font-size: 1.2rem;
-    color: white;
+    color: #1E272E;
     padding: 0.3rem 0.9rem;
     display: flex;
     justify-content: center;
@@ -29,9 +29,9 @@ a, .logo a:visited, .logo a:active, .logo a:hover {
 }
 
 .login:hover, .signup:hover {
-    background-color: #005ec2;
+    background-color: #00CEC9;
     border-radius: 5em;
-
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
     transform: translateY(-0.2vh);
 }
 
@@ -44,7 +44,9 @@ a, .logo a:visited, .logo a:active, .logo a:hover {
     font-size: 3rem;
     font-family: 'Dancing Script', sans-serif;
     color: rgb(224, 239, 252);
-    margin-left: 5vw;
+    text-align: center;
+    width: 300px;
+    background-color: #2D3436;
 }
 
 .logins {
@@ -52,7 +54,6 @@ a, .logo a:visited, .logo a:active, .logo a:hover {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #1F2A38;
     height: 5.5vh;
 }
 
@@ -92,7 +93,8 @@ a, .logo a:visited, .logo a:active, .logo a:hover {
 
 .submit_icon {
     all: unset;
-    background-color: rgb(190, 138, 86);
+    background-color: #0c5e9c;
+    color: #DFE6E9;
     box-shadow: rgba(0, 0, 0, 0.4) 0.1rem 0.1rem 0.6rem;
     font-size: 1.5vh;
     padding: 1vh 2vw 1vh 2vw;
@@ -102,7 +104,8 @@ a, .logo a:visited, .logo a:active, .logo a:hover {
 
 .add_icon {
     all: unset;
-    background-color: #546172;
+    background-color: #5c6669;
+    color: #DFE6E9;
     box-shadow: rgba(0, 0, 0, 0.4) 0.1rem 0.1rem 0.6rem;
     font-size: 1.5vh;
     padding: 1vh 2vw 1vh 2vw;
@@ -111,14 +114,14 @@ a, .logo a:visited, .logo a:active, .logo a:hover {
 }
 
 .submit_icon:hover, .add_icon:hover {
-    background-color: #024a97;
+    background-color: #0b7775;
     transform: translateY(-0.2vh);
 }
 
 .chats {
     width: 300px;
     color: white;
-    background: linear-gradient(to top, black, #1F2A38);
+    background: linear-gradient(to top, black, #2D3436);
     display: flex;
     flex-direction: column;
     padding: 1rem;
