@@ -1,3 +1,9 @@
+:root {
+    --sidebar-width: 18vw;
+    --sidebar-min: 220px;
+    --sidebar-max: 320px;
+}
+
 body {
     min-height: 100vh;
     margin: 0;
@@ -37,7 +43,8 @@ a, .logo a:visited, .logo a:active, .logo a:hover {
 
 .auth_links {
     display: flex;
-    flex-direction: row;
+    flex: 1;
+    justify-content: flex-end;
 }
 
 .logo {
@@ -45,15 +52,14 @@ a, .logo a:visited, .logo a:active, .logo a:hover {
     font-family: 'Dancing Script', sans-serif;
     color: rgb(224, 239, 252);
     text-align: center;
-    width: 300px;
+    width: clamp(var(--sidebar-min), var(--sidebar-width), var(--sidebar-max));
     background-color: #2D3436;
 }
 
 .logins {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
     height: 5.5vh;
 }
 
@@ -119,7 +125,7 @@ a, .logo a:visited, .logo a:active, .logo a:hover {
 }
 
 .chats {
-    width: 300px;
+    width: clamp(var(--sidebar-min), var(--sidebar-width), var(--sidebar-max));
     color: white;
     background: linear-gradient(to top, black, #2D3436);
     display: flex;
