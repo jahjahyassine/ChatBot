@@ -73,6 +73,8 @@ main {
     border-radius: 50%;
     /* background-color: white; */
     display: flex;
+    position: relative;
+    left: 27%;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
@@ -170,4 +172,48 @@ main {
 
     cursor: pointer;
     transition: transform 0.3s ease;
+}
+
+/* signup link */
+.signup {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: rgb(139, 139, 139);
+}
+.signup a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* responsiveness */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+    .rightSide {
+        display: none;
+    }
+    .leftSide {
+        width: 100%;
+        padding: 10px;
+    }
+    .email, .pass, .submit, .button, .social {
+        width: 90%;
+        max-width: 300px;
+    }
+    .button {
+        justify-content: space-between;
+    }
+    .social {
+        gap: 20px;
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 480px) {
+    .email, .pass, .submit {
+        width: 100%;
+    }
 }
