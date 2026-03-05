@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <!-- helo this is chatbot page -->
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
@@ -15,196 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="style.css">
 
-
-    <style>
-        :root {
-    --sidebar-width: 18vw;
-    --sidebar-min: 220px;
-    --sidebar-max: 320px;
-}
-
-body {
-    min-height: 100vh;
-    margin: 0;
-    background:oklch(86.9% 0.022 252.894);
-    display: flex;
-    background-image: url("images/chatbot.png");
-    background-repeat: no-repeat;
-    background-position: right center; /* pushes it to the right */
-    background-size: contain;
-    flex-direction: column;
-    font-family: 'Space Grotesk', sans-serif;
-}
-
-main {
-    display: flex;
-    flex: 1;
-}
-
-a, .logo a:visited, .logo a:active, .logo a:hover {
-    text-decoration: none;
-    color: rgb(224, 239, 252);
-}
-
-
-.login, .signup {
-    font-size: 1.2rem;
-    color: #1e272e;
-    border: #1e272e 1px solid;
-    padding: 0.3rem 0.9rem;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-    transition: all 0.8s ease;
-}
-
-.login:hover, .signup:hover {
-    color: white;
-    background-color: maroon;
-    border-radius: 5em;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 11);
-    transform: translateY(-0.2vh);
-}
-
-.auth_links {
-    display: flex;
-    gap: 1rem;
-    flex: 1;
-    justify-content: flex-end;
-}
-
-.logo {
-    font-size: 3rem;
-    font-family: 'Dancing Script', sans-serif;
-    color: rgb(224, 239, 252);
-    text-align: center;
-    width: clamp(var(--sidebar-min), var(--sidebar-width), var(--sidebar-max));
-    background-color: #2D3436;
-}
-
-@media (width <= 200) {
-    .logo {
-        width: 5px;
-    }
-}
-
-.logins {
-    display: flex;
-    align-items: center;
-}
-
-
-.input_section  {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content:center ;
-    
-    align-items: center;
-    gap: 1rem;
-}
-
-
-.question {
-    border: none;
-    color: rgb(0, 0, 0);
-    background-color: transparent;
-    box-shadow: rgba(0, 0, 0, 0.4) 0.1rem 0.1rem 0.6rem;
-    width: 50vw;
-    height: 3vh;
-    padding: 2vh;
-    border-radius: 3vh;
-    text-align: center;
-}
-
-.question::placeholder {
-    color: white;
-}
-
-.question:focus {
-    border: none;
-    outline: none;
-    background-color: rgba(255, 255, 255, 0.178);
-}
-
-
-.actions {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2vw;
-}
-
-
-.submit_icon {
-    all: unset;
-    background-color: transparent;
-    color: white;
-    box-shadow: rgba(0, 0, 0, 0.4) 0.1rem 0.1rem 0.6rem;
-    font-size: 1.5vh;
-    padding: 1vh 2vw 1vh 2vw;
-    border-radius: 2vh;
-    transition: all 0.3s ease;
-}
-
-.add_icon {
-    all: unset;
-    background-color: #5c66690e;
-    color: white;
-    box-shadow: rgba(0, 0, 0, 0.4) 0.1rem 0.1rem 0.6rem;
-    font-size: 1.5vh;
-    padding: 1vh 2vw 1vh 2vw;
-    border-radius: 2vh;
-    transition: all 0.3s ease;
-}
-
-.submit_icon:hover, .add_icon:hover {
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 11);
-    background-color: maroon;
-    transform: translateY(-0.2vh);
-    color: white;
-}
-
-.chats {
-    width: clamp(var(--sidebar-min), var(--sidebar-width), var(--sidebar-max));
-    color: white;
-    background: linear-gradient(to top, hwb(166 69% 22% / 0.11), #2D3436);
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    gap: 1rem;
-    box-sizing: border-box;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 1.5rem;
-}
-
-h3 {
-    color: #838588;
-}
-
-.chats li {
-    padding: 0.5rem 0.8rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.chats li:hover {
-    background-color: rgba(255,255,255,0.08);
-}
-
-    </style>
     <title>Jarvis</title>
 </head>
 <body>
